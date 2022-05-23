@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="/assets/searchQuiz.css">
+    <link rel="stylesheet" href="/assets/nar-bar.css">
+</head>
+<body>
+     <!-- narbar -->
+     <div class="nar-bar">
+        <div class="left-bar">
+            <a href="/home" class="brand">QF</a>
+            <a href="/createQuiz" class="createQuiz">Create a Quiz</a>
+        </div>
+        <div class="right-bar">
+            <form action="/home/query" method="POST" class="searchForm">
+                <input type="text" name="search" requireds placeholder="Search quiz">
+                <button type="submit">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </form>
+            <ion-icon class="user" name="person-circle-outline"></ion-icon>
+            <div class="box-user hide">
+                <a href="/profile"><ion-icon name="folder-outline"></ion-icon> My Labrary</a>
+                <a href="/logout"><ion-icon name="log-out-outline"></ion-icon> Log out</a>
+            </div>
+        </div>
+    </div>
+    <!-- endnarbar -->
+
+    <!-- body -->
+    <div class="quiz">
+        <div class="container">
+            <h3 class="text-search"></h3>
+            <div class="quizItems">
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="/assets/searchQuiz.js"></script>
+    <script src="/assets/nar-bar.js"></script>
+    <!-- end body -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/assets/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-left">
+            <h3>Study effectively and comfortably</h3>
+        </div>
+        <div class="form-right"> 
+            <div class="box">
+                <div class="form-top">
+                    <button class="register-btn btn">Register</button>
+                    <button class="login-btn btn">Login</button>
+                </div>
+                <div class="form-bottom">
+                    <div class="register hidden">
+                        <form action="/" method="post">
+                            <input type="hidden" name="action" value="register">
+                            <input type="email" name="email" placeholder="email">
+                            <p>Email</p>
+                            <input type="text" name="username" placeholder="username">
+                            <p>Username</p>
+                            <input type="password" name="username" id="" placeholder="password">
+                            <p>Password</p>
+                            <input type="submit" id="input-btn" value="Register">
+                        </form>
+                        <button class="relogin">Do you have an account? Login</button>
+                    </div>
+                    <div class="login">
+                        <form action="/" method="post">
+                            <input type="hidden" name="action" value="login">
+                            <input type="text" name="username" placeholder="username">
+                            <p>Username</p>
+                            <input type="password" name="password" id="" placeholder="password">
+                            <p>Password</p>
+                            <input type="submit" id="input-btn" value="Login">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/assets/login-form.js"></script>
+</body>
+
+</html>

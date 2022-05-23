@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/quiz.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- narbar -->
+    <!-- endnarbar -->
+    <!-- body -->
+    <div class="main">
+        <div class="top">
+            <progress class="progress" value="30" max="30"></progress>
+            <div class="nar">
+                <button class="btnPause">Pause</button>
+                <p class="count"></p>
+            </div>
+        </div>
+        <form action="/quiz/result" method="post" class="container">
+            <div class="body" data-pointer="0">
+                <div class="cover hidden"></div>
+            </div>
+            
+            <input type="submit" value="" class="submit">
+        </form>
+        <div class="footer">
+            <div class="box-btn">
+                <div class="back box">
+                    <button class="btnBack btn">
+                        <ion-icon name="caret-back-outline"></ion-icon>
+                    </button>
+                    <p>Back</p>
+                </div>
+                <div class="next box">
+                    <button class="btnNext btn">
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </button>
+                    <p>Next</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end body -->
+    <script src="/assets/quiz.js"></script>
+</body>
+
+</html>
